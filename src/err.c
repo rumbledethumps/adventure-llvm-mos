@@ -6,7 +6,8 @@
 
 static void print(char *type, char *s1, char *s2)
 {
-    fprintf(stderr, "%s: %s\n", type, __stroserror(__oserror));
+    // llvm-mos doesn't have this yet
+    // fprintf(stderr, "%s: %s\n", type, __stroserror(__oserror));
     fprintf(stderr, s1, s2);
     fprintf(stderr, "\n");
 }
